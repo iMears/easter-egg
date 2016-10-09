@@ -11,10 +11,10 @@ for (var i = 0; i < codeLength; i += 1) {
 randomCode = randomCode.join(' ');
 
 $(document).ready(function() {
-  $('p').text(randomCode);
+  $('#code').text(randomCode);
 
   cheet(randomCode, function() {
-    $('p').hide();
+    $('#code').hide();
     $('#canvas').show('fast');
   });
 });
