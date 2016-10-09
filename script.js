@@ -1,3 +1,3 @@
-cheet('t e s t', function () {
+cheet('← → ← → ↑ ↑ ↓ ↓', function() {
   alert('testing...');
 });
