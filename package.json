@@ -1,0 +1,22 @@
+{
+  "name": "easter-egg",
+  "version": "1.0.0",
+  "description": "A ",
+  "main": "cheet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iMears/easter-egg.git"
+  },
+  "author": "Maxwell Mears",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iMears/easter-egg/issues"
+  },
+  "homepage": "https://imears.github.io/easter-egg",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
