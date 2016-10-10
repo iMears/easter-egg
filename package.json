@@ -1,7 +1,7 @@
 {
   "name": "easter-egg",
-  "version": "1.0.0",
-  "description": "A ",
+  "version": "1.0.1",
+  "description": "Easily hide easter eggs in your site with easter-egg.js",
   "main": "easter-egg.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
