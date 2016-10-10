@@ -21,6 +21,8 @@ $(document).ready(function() {
     }
   });
 
+  var first = true;
+
   cheet('c o l o r', {
     next: function(str, key, num, seq) {
       $('.colors').removeClass('animated shake');
@@ -36,15 +38,19 @@ $(document).ready(function() {
 
     done: function() {
       $('#color').hide();
-      $('#code').show();
+
+      if (first) {
+        $('#code').show();
+      }
 
       var rgb = [];
       for(var i = 0; i < 3; i++) {
         rgb.push(Math.floor(Math.random() * 255));
       }
 
-      $('body').css('background', 'rgb('+ rgb.join(',') +')');
+      $('body').css('background', 'rgba('+ rgb.join(',') +', 0.4)');
       $('body').css('color', 'white');
+      first = false;
     }
   });
 });

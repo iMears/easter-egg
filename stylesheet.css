@@ -28,6 +28,7 @@ body {
 }
 
 .correct {
+  transition: 0.1s;
   color: #4BB74C;
 }
 
