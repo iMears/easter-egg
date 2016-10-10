@@ -40,6 +40,10 @@ span[class^="color-"] {
   margin-left: -9px;
 }
 
+span[class^="color-"]:first-of-type {
+  margin-left: 0;
+}
+
 div .arrow-0, div .colors {
   margin-left: 10px;
 }
