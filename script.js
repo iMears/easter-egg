@@ -1,4 +1,3 @@
-
 var codeLength = 5
 var arrows     = ['↑', '↓', '←', '→'];
 var randomCode = [];
@@ -11,10 +10,13 @@ for (var i = 0; i < codeLength; i += 1) {
 randomCode = randomCode.join(' ');
 
 $(document).ready(function() {
-  $('#code').text(randomCode);
+
+  $('#code').text('type ' + randomCode);
 
   cheet(randomCode, function() {
     $('#code').hide();
-    $('#canvas').show('fast');
+    var $canvas = $('#canvas');
+    $canvas.show('fast');
+    $canvas.addClass('active');
   });
 });

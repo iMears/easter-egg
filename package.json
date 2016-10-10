@@ -2,7 +2,7 @@
   "name": "easter-egg",
   "version": "1.0.0",
   "description": "A ",
-  "main": "cheet.js",
+  "main": "easter-egg.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
