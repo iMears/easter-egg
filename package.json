@@ -1,6 +1,6 @@
 {
   "name": "easter-egg",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "description": "Easily hide your easter eggs in the browser!",
   "main": "easter-egg.js",
   "scripts": {
