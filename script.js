@@ -6,9 +6,11 @@ $(document).ready(function() {
       $('.arrow-' + num).addClass('correct')
     },
 
-    fail: function() {
-      $('span[class^="arrow"]').removeClass('correct');
-      $('.arrows').addClass('animated shake');
+    fail: function(str) {
+      if (str[0] === '←') {
+        $('span[class^="arrow"]').removeClass('correct');
+        $('.arrows').addClass('animated shake');
+      }
     },
 
     done: function() {
@@ -25,13 +27,11 @@ $(document).ready(function() {
       $('.color-' + num).addClass('correct')
     },
 
-    fail: function(str, key, num, seq) {
-      console.log('str', str)
-      console.log('key', key)
-      console.log('num', num)
-      console.log('seq', seq)
-      $('span[class^="color-"]').removeClass('correct');
-      $('.colors').addClass('animated shake');
+    fail: function(str) {
+      if (str[0] === 'c') {
+        $('span[class^="color-"]').removeClass('correct');
+        $('.colors').addClass('animated shake');
+      }
     },
 
     done: function() {

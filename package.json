@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/imears/easter-egg#readme",
   "dependencies": {
-    "jquery": "^3.1.1"
+    "jquery": "^.31.1"
   }
 }
