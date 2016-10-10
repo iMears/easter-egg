@@ -1,6 +1,6 @@
 # easter-egg.js
 
-## easy easter eggs in the browser
+## Easily hide your easter eggs in the browser!
 
 ### Demo
 
@@ -8,64 +8,64 @@
 
 ### Install
 
-    ```npm install --save easter-egg```
+```npm install --save easter-egg```
 
 #### usage
 
-    ```<script src="./node_modules/easter-egg/easter-egg.js" type="text/javascript"></script>```
+```<script src="./node_modules/easter-egg/easter-egg.js" type="text/javascript"></script>```
 
-    ```javascript
-    cheet('e a s t e r', function () { alert('Hidden easter Egg!'); });
-    ```
+```javascript
+cheet('e a s t e r', function () { alert('Hidden easter Egg!'); });
+```
 
-    ```javascript
-    cheet('↑ ↑ ↓ ↓ ←', function () {
-      alert('You found the easter egg!');
-    });
-    ```
+```javascript
+cheet('↑ ↑ ↓ ↓ ←', function () {
+  alert('You found the easter egg!');
+});
+```
 
-    ```javascript
-    cheet('s e q u e n c e', {
-      next: function (str, key, num, seq) {
-        console.log('key pressed: ' + key);
-        console.log('progress: ' + num / seq.length);
-        console.log('seq: ' + seq.join(' '));
-      },
+```javascript
+cheet('s e q u e n c e', {
+  next: function (str, key, num, seq) {
+    console.log('key pressed: ' + key);
+    console.log('progress: ' + num / seq.length);
+    console.log('seq: ' + seq.join(' '));
+  },
 
-      fail: function () {
-        console.log('sequence failed');
-      },
+  fail: function () {
+    console.log('sequence failed');
+  },
 
-      done: function () {
-        console.log('Hello Easter Egg!');
-      }
-    });
-    ```
+  done: function () {
+    console.log('Hello Easter Egg!');
+  }
+});
+```
 
-    ```javascript
-    cheet('o n c e', function () {
-      console.log('This will only fire once.');
-      cheet.disable('o n c e');
-    });
-    ```
+```javascript
+cheet('o n c e', function () {
+  console.log('This will only fire once.');
+  cheet.disable('o n c e');
+});
+```
 
-    ```javascript
-    var sequences = {
-      sequence: 'up down left right',
-      circle: 'left up right down'
-    };
+```javascript
+var sequences = {
+  sequence: 'up down left right',
+  circle: 'left up right down'
+};
 
-    cheet(sequences.sequence);
-    cheet(sequences.circle);
+cheet(sequences.sequence);
+cheet(sequences.circle);
 
-    cheet.done(function (seq) {
-      if (seq === sequences.sequence) {
-        console.log('sequence!');
-      } else {
-        console.log('circle!');
-      }
-    });
-    ```
+cheet.done(function (seq) {
+  if (seq === sequences.sequence) {
+    console.log('sequence!');
+  } else {
+    console.log('circle!');
+  }
+});
+```
 ### API
 
 <a name='api_cheet'></a>
