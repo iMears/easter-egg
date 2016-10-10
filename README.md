@@ -4,7 +4,7 @@
 
 ### Demo
 
-[Try it out!](http://imears.github.io/easter=egg)
+[Try it out!](https://imears.github.io/easter-egg/)
 
 ### Install
 
