@@ -17,6 +17,10 @@
   color: #4BB74C;
 }
 
+.arrows, .title {
+  display: inline-block;
+}
+
 .arrow-0 {
   margin-left: 10px;
 }

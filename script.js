@@ -1,12 +1,14 @@
 $(document).ready(function() {
 
-  cheet('← ↓ → ↓ ↑', {
+  cheet('← ↓ ← ↓ ↑', {
     next: function(str, key, num, seq) {
+      $('.arrows').removeClass('animated shake');
       $('.arrow-' + num).addClass('correct')
     },
 
     fail: function() {
       $('span[class^="arrow"]').removeClass('correct');
+      $('.arrows').addClass('animated shake');
     },
 
     done: function() {
