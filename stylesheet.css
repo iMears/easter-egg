@@ -1,9 +1,23 @@
-#code {
-  font-size: 32px;
-  margin-top: 225px;
+body {
+  transition: 0.5s;
 }
 
-#canvas {
+#code {
+  padding: 80px;
+  margin: 0 auto;
+  width: 400px;
+  height: 220;
+  background: white;
+  color: rgb(51, 51, 51);
+}
+
+#code, #color {
+  padding: 80px;
+  font-size: 32px;
+  margin-top: 150px;
+}
+
+#code, #canvas {
   display: none;
 }
 
@@ -17,10 +31,14 @@
   color: #4BB74C;
 }
 
-.arrows, .title {
+.arrows, .title, .colors, .colors-title {
   display: inline-block;
 }
 
-.arrow-0 {
+span[class^="color-"] {
+  margin-left: -9px;
+}
+
+div .arrow-0, div .colors {
   margin-left: 10px;
 }

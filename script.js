@@ -19,14 +19,32 @@ $(document).ready(function() {
     }
   });
 
-  cheet('c o l o r', function() {
-    var rgb = [];
-    for(var i = 0; i < 3; i++) {
-      rgb.push(Math.floor(Math.random() * 255));
-    }
+  cheet('c o l o r', {
+    next: function(str, key, num, seq) {
+      $('.colors').removeClass('animated shake');
+      $('.color-' + num).addClass('correct')
+    },
 
-    $('body').css('background', 'rgb('+ rgb.join(',') +')');
-    $('body').css('color', 'white');
+    fail: function(str, key, num, seq) {
+      console.log('str', str)
+      console.log('key', key)
+      console.log('num', num)
+      console.log('seq', seq)
+      $('span[class^="color-"]').removeClass('correct');
+      $('.colors').addClass('animated shake');
+    },
+
+    done: function() {
+      $('#color').hide();
+      $('#code').show();
+      var rgb = [];
+      for(var i = 0; i < 3; i++) {
+        rgb.push(Math.floor(Math.random() * 255));
+      }
+
+      $('body').css('background', 'rgb('+ rgb.join(',') +')');
+      $('body').css('color', 'white');
+    }
   });
 });
 
