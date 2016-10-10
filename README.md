@@ -1,6 +1,7 @@
 # easter-egg.js
 
 ## Easily hide your easter eggs in the browser!
+#### Forked from [Lou Acresti](https://github.com/namuol)'s [cheet.js](https://github.com/namuol/cheet.js)
 
 ### Demo
 
@@ -8,9 +9,9 @@
 
 ### Install
 
-```npm install --save easter-egg```
+```npm install easter-egg --save```
 
-#### usage
+### usage
 
 ```<script src="./node_modules/easter-egg/easter-egg.js" type="text/javascript"></script>```
 
