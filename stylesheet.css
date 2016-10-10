@@ -1,5 +1,5 @@
 #code {
-  font-size: 30px;
+  font-size: 32px;
   margin-top: 225px;
 }
 
@@ -11,4 +11,12 @@
   background: white;
   border: 1px solid #d3d3d3;
   margin-top: 40px;
+}
+
+.correct {
+  color: #4BB74C;
+}
+
+.arrow-0 {
+  margin-left: 10px;
 }

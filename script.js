@@ -1,22 +1,30 @@
-var codeLength = 5
-var arrows     = ['↑', '↓', '←', '→'];
-var randomCode = [];
-
-for (var i = 0; i < codeLength; i += 1) {
-  var randomArrow = arrows[Math.floor(Math.random() * arrows.length)];
-  randomCode.push(randomArrow);
-}
-
-randomCode = randomCode.join(' ');
-
 $(document).ready(function() {
 
-  $('#code').text('type ' + randomCode);
+  cheet('← ↓ → ↓ ↑', {
+    next: function(str, key, num, seq) {
+      $('.arrow-' + num).addClass('correct')
+    },
 
-  cheet(randomCode, function() {
-    $('#code').hide();
-    var $canvas = $('#canvas');
-    $canvas.show('fast');
-    $canvas.addClass('active');
+    fail: function() {
+      $('span[class^="arrow"]').removeClass('correct');
+    },
+
+    done: function() {
+      $('#code').hide();
+      var $canvas = $('#canvas');
+      $canvas.show('fast');
+      $canvas.addClass('active');
+    }
+  });
+
+  cheet('c o l o r', function() {
+    var rgb = [];
+    for(var i = 0; i < 3; i++) {
+      rgb.push(Math.floor(Math.random() * 255));
+    }
+
+    $('body').css('background', 'rgb('+ rgb.join(',') +')');
+    $('body').css('color', 'white');
   });
 });
+
